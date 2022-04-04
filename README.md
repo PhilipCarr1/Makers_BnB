@@ -11,7 +11,7 @@ NTH = Nice to Have
 
 ## (Shared):
 
-As a host/user
+As a host/user <br />
 So that I can use the site
 I want to be able to create an account/login [NTH]
 
