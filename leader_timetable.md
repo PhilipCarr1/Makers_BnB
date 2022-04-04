@@ -1,24 +1,24 @@
-## Standup and Retro Leader Timetable
+# Standup and Retro Leader Timetable
 
-# Tuesday
+## Tuesday
 
 Standup - Phil
 
 Retro - Jake
 
-# Wednesday
+## Wednesday
 
 Standup - Eleanor
 
 Retro - Luci
 
-# Thursday
+## Thursday
 
 Standup - Elham
 
 Retro - Quincy
 
-# Friday
+## Friday
 
 Standup - Eleanor
 
