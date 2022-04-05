@@ -21,15 +21,15 @@ git merge "branch name" (Merges current branch onto main, add "--no--ff" to keep
 
 ## Branch workflow
 
-- Create a new branch, naming it based on the ticket(s) we are currently working on.
-- Make sure we an up to date main branch, using git pull.
-- Checkout our new branch and make the appropriate changes.
+- Make sure we an up to date main branch, using git pull. <br />
+- Create a new branch, naming it based on the ticket(s) we are currently working on. <br />
+- Checkout our new branch and make the appropriate changes. <br />
 - If making a small change, we do not need to run a git push command, adding and commiting the change will be enough, the push <br />
-functionality is achieved through merging the branch.
+functionality is achieved through merging the branch. <br />
 - If we are changing pair, or working on a branch for a longer time, we can git push as well. REMEMBER!!! We must set the <br />
-origin point for these pushes to our current branch (the terminal will keep you right).
-- Once happy, its time to merge. We can do this through the terminal or alternatively through GitHub directly.
-- For simplicity, stick to merging using GitHub. Set authorization if required and move your ticket from 'Doing' to 'Merge Ready'.
+origin point for these pushes to our current branch (the terminal will keep you right). <br />
+- Once happy, its time to merge. We can do this through the terminal or alternatively through GitHub directly. <br />
+- For simplicity, stick to merging using GitHub. Set authorization if required and move your ticket from 'Doing' to 'Merge Ready'. <br />
 
 
 # Makers_BnB
