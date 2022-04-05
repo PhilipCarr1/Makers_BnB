@@ -1,11 +1,30 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/quincysesay/Desktop/MakersBnB/Makers_BnB/app.rb": {
+      "/Users/elhamidriss/Desktop/Makers_BnB/Makers_BnB/app.rb": {
         "lines": [
           1,
           1,
           null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/elhamidriss/Desktop/Makers_BnB/Makers_BnB/spec/feature/landing_page_spec.rb": {
+        "lines": [
+          1,
           1,
           1,
           1,
@@ -13,8 +32,12 @@
           null
         ]
       },
-      "/Users/quincysesay/Desktop/MakersBnB/Makers_BnB/spec/feature/landing_page_spec.rb": {
+      "/Users/elhamidriss/Desktop/Makers_BnB/Makers_BnB/spec/feature/view_properties_spec.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          null,
           1,
           1,
           1,
@@ -24,6 +47,6 @@
         ]
       }
     },
-    "timestamp": 1649168471
+    "timestamp": 1649172392
   }
 }
