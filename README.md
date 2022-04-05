@@ -24,10 +24,10 @@ git merge "branch name" (Merges current branch onto main, add "--no--ff" to keep
 - Make sure we an up to date main branch, using git pull. <br />
 - Create a new branch, naming it based on the ticket(s) we are currently working on. <br />
 - Checkout our new branch and make the appropriate changes. <br />
-- If making a small change, we do not need to run a git push command, adding and commiting the change will be enough, the push
-functionality is achieved through merging the branch. <br />
-- If we are changing pair, or working on a branch for a longer time, we can git push as well. REMEMBER!!! We must set the
-origin point for these pushes to our current branch (the terminal will keep you right). <br />
+- Make the changes and run git add and commit commands as normal. <br />
+- Aim not to push new changes until they are complete but if we need to, so our pair can take over
+for example, run the push command via the follwing step. <br />
+- Git push will always point to the origin for the main branch to begin with, our first push on our new branch we must use 'git push --set-upstream origin "branch name". This will point our changes to our new branch instead of the main branch (that would be bad). We only have tp do this once, any further pushes we can use 'git push origin'. <br />
 - Once happy, its time to merge. We can do this through the terminal or alternatively through GitHub directly. <br />
 - For simplicity, stick to merging using GitHub. Set authorization if required and move your ticket from 'Doing' to 'Merge Ready'. <br />
 
