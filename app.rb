@@ -7,7 +7,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/add_property' do
-    redirect '/' #'/view_property' ?
+    redirect '/properties'
   end
 
   run! if app_file == $0
