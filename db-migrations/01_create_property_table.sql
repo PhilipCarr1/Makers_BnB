@@ -1,0 +1,1 @@
+CREATE TABLE property (id SERIAL PRIMARY KEY, property_name VARCHAR(60), description VARCHAR(200), price DECIMAL(3,2), host_name VARCHAR(60));

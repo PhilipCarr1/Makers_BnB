@@ -8,7 +8,7 @@ Run git clone "repo_url"
 
 In an integrated terminal, run 'bundle install'
 
-Refer to 'db-migrations' folder for any necessary database setup instructions.
+Refer to 'db-migrations' folder for any necessary database setup instructions (scroll down for database information).
 
 # Branch control
 
@@ -115,3 +115,22 @@ I want to be able to edit my listings [F]
 As a host, <br />
 So that I can remove expired listings <br />
 I want to be able to delete listings [F]
+
+## Database Setup
+
+To setup the database:
+
+* Connect to psql
+* Create the database using the psql command `CREATE DATABASE makersbnb;`
+* Connect to the database using the psql command `\c makersbnb`;
+* Run the query we have saved in the file 01_create_property_table.sql
+* Populate your table with a row by running `INSERT INTO property (property_name, description, price, host_name) values ('Makers Paradise', 'Quaint little paradise escape, perfect for couples and families', 130.75, 'Benedict Cumberbatch');`
+
+To check you have everything set up ok, please take a look at the peeps table inside the chitter database. You should see one row in there.  
+
+To setup the test database:
+* Connect to psql
+* Create the database using the psql
+command `CREATE DATABASE makersbnb_test;`;
+* Connect to the database using the psql command `\c makersbnb_test`
+* Run the query we have saved in the file 01_create_property_table.sql
