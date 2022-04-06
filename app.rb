@@ -21,5 +21,14 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
+  post '/properties/:id' do
+    Property.book(id: params[:id])
+    redirect '/booking_confirmation/:id'
+  end
+
+  get '/booking_confirmation/:id' do
+    erb :confirmation_page
+  end
+
   run! if app_file == $0
 end

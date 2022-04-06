@@ -1,17 +1,23 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< Updated upstream
       "/Users/jake.dance/Team-Bee/Makers_BnB/app.rb": {
+=======
+      "/Users/curnowl/Documents/Makers/04-April-2022/Week_7/Makers_BnB/app.rb": {
+>>>>>>> Stashed changes
         "lines": [
           1,
           1,
-          null,
-          1,
-          1,
           1,
           null,
+          1,
+          1,
+          0,
+          null,
           null,
           1,
+<<<<<<< Updated upstream
           1,
           null,
           null,
@@ -20,8 +26,23 @@
           null,
           1,
           0,
+=======
+          1,
+          1,
           null,
           null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+>>>>>>> Stashed changes
+          null,
+          null,
+<<<<<<< Updated upstream
           1,
           0,
           null,
@@ -36,17 +57,33 @@
         ]
       },
       "/Users/jake.dance/Team-Bee/Makers_BnB/lib/Property.rb": {
+=======
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/curnowl/Documents/Makers/04-April-2022/Week_7/Makers_BnB/lib/Property.rb": {
+>>>>>>> Stashed changes
         "lines": [
           1,
           null,
           1,
+          null,
           1,
-          0,
-          0,
           null,
-          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
-          null,
+<<<<<<< Updated upstream
           null
         ]
       },
@@ -61,12 +98,33 @@
           0,
           0,
           0,
+=======
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+>>>>>>> Stashed changes
           null,
           0,
           0,
+          null,
           0,
           0,
           null,
+<<<<<<< Updated upstream
           null
         ]
       },
@@ -76,25 +134,45 @@
           1,
           1,
           1,
+=======
+          null,
+          1,
+>>>>>>> Stashed changes
           null,
           null
         ]
       },
+<<<<<<< Updated upstream
       "/Users/jake.dance/Team-Bee/Makers_BnB/spec/features/view_properties_spec.rb": {
+=======
+      "/Users/curnowl/Documents/Makers/04-April-2022/Week_7/Makers_BnB/spec/features/booking_confirmation_button_spec.rb": {
+>>>>>>> Stashed changes
         "lines": [
           1,
           1,
           1,
+<<<<<<< Updated upstream
           null,
           1,
           1,
           1,
           1,
+=======
+          1,
+          1,
+          1,
+          1,
+          0,
+>>>>>>> Stashed changes
           null,
           null
         ]
       }
     },
+<<<<<<< Updated upstream
     "timestamp": 1649238819
+=======
+    "timestamp": 1649254254
+>>>>>>> Stashed changes
   }
 }
