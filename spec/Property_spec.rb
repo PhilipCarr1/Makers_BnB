@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-require "Property"
-=======
 require "Property"
 require 'database_helpers'
 
@@ -37,4 +34,3 @@ describe '.create' do
 
   end
 end
->>>>>>> Stashed changes

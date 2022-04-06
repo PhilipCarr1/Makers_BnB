@@ -8,10 +8,6 @@ class Property
     connection = PG.connect(dbname: 'makersbnb')
     end
   end
-<<<<<<< Updated upstream
-end
-=======
-
 
   def self.all
     connection = open_connection
@@ -29,6 +25,7 @@ end
   end
 
   def self.book(id:)
+    #retrieve info for 1 property corresponding to id
+    
   end
 end
->>>>>>> Stashed changes
