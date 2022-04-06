@@ -1,5 +1,10 @@
+<h1> List properties page </h1>
 <ul>
-<% @properties.each do |list|%>
-<li><%= list%></li>
+<% @properties.each do |property| %>
+<li>
+  <%= property.property_name %>
+  <form action='/properties/<%= property.id %>' method='post'>
+  <input type='submit' value='Book Now!'/>
+</li>
 <% end %>
-</ul>
+</ul> 
