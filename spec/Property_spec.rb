@@ -4,12 +4,18 @@ require 'database_helpers'
 describe Property do
   describe '.all' do 
       it 'returns all properties' do 
+        setup_test_database
+        
+        Property.create(property_name: 'Test Property Name', description: 'Test description', price: 99.99, host_name: 'Test host name')
+        Property.create(property_name: 'Test Property Two', description: 'Test description 2', price: 102.99, host_name: 'Test host two')
+        
         properties = Property.all
 
-        expect(properties).to include "Makers Paradise"
-        expect(properties).to include "Quaint little paradise escape, perfect for couples and families"
-        expect(properties).to include "130.75"
-        expect(properties).to include "Benedict Cumberbatch"
+        expect(properties.first).to be_a Property
+        expect(properties.first.property_name).to eq "Test Property Name"
+        expect(properties.first.host_name).to eq "Test host name"
+        expect(properties.second.property_name).to eq "Test Property Two"
+        expect(properties.second.host_name).to eq "Test host two"
       end 
     end
 end
@@ -30,11 +36,10 @@ end
 
 describe '.delete' do
   it 'deletes a property' do
-    makersbnb = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
-    persisted_data = persisted_data(id: makersbnb.id)
-    Property.delete(id: list.id)
-    makersbnb = Property.all
+    property = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
+    Property.delete(id: property.id)
+    properties = Property.all
 
-    expect(list.empty?).to eq true
+    expect(properties.empty?).to eq true
   end
 end
