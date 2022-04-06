@@ -1,6 +1,17 @@
 require 'pg'
 
 class Property
+
+  attr_reader :id, :property_name, :description, :price, :host_name
+
+  def initialize(id:, property_name:, description:, price:, host_name:)
+    @id = id
+    @property_name = property_name
+    @description = description
+    @price = price
+    @host_name = host_name
+  end
+  
   def self.open_connection
     if ENV['ENVIRONMENT'] == 'test'
     connection = PG.connect(dbname: 'makersbnb_test')
