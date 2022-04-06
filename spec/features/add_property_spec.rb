@@ -1,3 +1,5 @@
+require 'setup_test_database'
+
 feature 'Add property' do
   scenario 'a user wants to list their property on the site' do
     setup_test_database

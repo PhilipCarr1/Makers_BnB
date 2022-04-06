@@ -8,4 +8,10 @@ class Property
     connection = PG.connect(dbname: 'makersbnb')
     end
   end
+
+  def self.all
+    connection = open_connection
+
+    result = connection.exec('SELECT * FROM property;')
+  end
 end
