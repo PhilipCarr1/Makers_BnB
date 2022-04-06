@@ -1,5 +1,5 @@
-require 'sinatra/base'
-require 'sinatra/reloader'
+require 'sinatra'
+require 'sinatra/reloader' if development?
 
 class MakersBnB < Sinatra::Base
   get '/' do
@@ -11,6 +11,14 @@ class MakersBnB < Sinatra::Base
     "Quaint little paradise escape, perfect for couples and families",
     "130.75",
     "Benedict Cumberbatch"]
+  end
+  
+  get '/add_property' do
+    erb :add_property
+  end
+
+  post '/add_property' do
+    redirect '/properties'
   end
 
   run! if app_file == $0
