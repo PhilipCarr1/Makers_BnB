@@ -1,0 +1,2 @@
+#ignore .json files (to ignore those in coverage folder)
+*.json
