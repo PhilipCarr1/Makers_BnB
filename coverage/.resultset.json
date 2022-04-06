@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jake.dance/Team-Bee/Makers_BnB/app.rb": {
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/app.rb": {
         "lines": [
           1,
           1,
@@ -12,7 +12,7 @@
           null,
           null,
           1,
-          1,
+          2,
           null,
           null,
           null,
@@ -23,6 +23,7 @@
           null,
           null,
           1,
+          0,
           0,
           null,
           null,
@@ -30,48 +31,19 @@
           null
         ]
       },
-      "/Users/jake.dance/Team-Bee/Makers_BnB/spec/Property_spec.rb": {
-        "lines": [
-          1
-        ]
-      },
-      "/Users/jake.dance/Team-Bee/Makers_BnB/lib/Property.rb": {
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/spec/Property_spec.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
-          0,
-          0,
           null,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/jake.dance/Team-Bee/Makers_BnB/spec/features/add_property_spec.rb": {
-        "lines": [
           1,
           1,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/jake.dance/Team-Bee/Makers_BnB/spec/features/landing_page_spec.rb": {
-        "lines": [
+          1,
+          1,
           1,
           1,
           1,
@@ -80,7 +52,80 @@
           null
         ]
       },
-      "/Users/jake.dance/Team-Bee/Makers_BnB/spec/features/view_properties_spec.rb": {
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/lib/Property.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/spec/features/add_property_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/spec/features/landing_page_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/eleanorchamberlain-stoltzfus/Projects/Makers_BnB/spec/features/view_properties_spec.rb": {
         "lines": [
           1,
           1,
@@ -95,6 +140,6 @@
         ]
       }
     },
-    "timestamp": 1649238819
+    "timestamp": 1649243943
   }
 }

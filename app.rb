@@ -18,6 +18,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/add_property' do
+    Property.create(property_name: params[:property_name], description: params[:description], price: params[:price], host_name: params[:host_name])
     redirect '/properties'
   end
 
