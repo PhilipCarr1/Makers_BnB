@@ -22,7 +22,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties/:id' do
-    Property.book(id: params[:id])
+    #need to retrieve 1 property from DB
     redirect '/booking_confirmation/:id'
   end
 
