@@ -26,7 +26,7 @@ class MakersBnB < Sinatra::Base
   # end
 
   get '/booking_confirmation/:id' do
-    @booked_property = Property.book(id: params[:id])
+    @booked_property = Property.book(id: params['property.id') # need to get id from the button id clicked
     erb :confirmation_page
   end
 
