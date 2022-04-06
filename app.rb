@@ -1,16 +1,15 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require './lib/Property'
 
 class MakersBnB < Sinatra::Base
   get '/' do
-    erb :'index'
+    erb :index
   end
 
   get '/properties' do
-    ["Makers Paradise",
-    "Quaint little paradise escape, perfect for couples and families",
-    "130.75",
-    "Benedict Cumberbatch"]
+    @properties = Property.all
+    erb :list_properties
   end
   
   get '/add_property' do

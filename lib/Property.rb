@@ -20,6 +20,14 @@ class Property
     end
   end
 
+
+  def self.all
+    connection = open_connection
+
+    result = connection.exec('SELECT * FROM property;')
+  end
+end
+
   def self.create(property_name:, description:, price:, host_name:)
     connection = open_connection
 
@@ -27,4 +35,3 @@ class Property
     Property.new(id: result[0]['id'], property_name: result[0]['property_name'], description: result[0]['description'], price: result[0]['price'], host_name: result[0]['host_name'])
   end
 end
-
