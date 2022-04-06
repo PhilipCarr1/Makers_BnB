@@ -36,6 +36,9 @@ class Property
   end
 
   def self.book(id:)
+    #for now, it retreives a property from the database at the id specified
+    connection = open_connection
+    result = connection.exec_params('SELECT * FROM property WHERE id=$1;',[id])
+    Property.new(id: result[0]['id'], property_name: result[0]['property_name'], description: result[0]['description'], price: result[0]['price'], host_name: result[0]['host_name'])
   end
-end
 end

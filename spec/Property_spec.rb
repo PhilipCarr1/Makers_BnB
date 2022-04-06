@@ -3,7 +3,7 @@ require 'database_helpers'
 
 describe Property do
   describe '.all' do 
-      it 'returns all properties' do 
+      xit 'returns all properties' do 
         properties = Property.all
 
         expect(properties).to include "Makers Paradise"
@@ -30,7 +30,12 @@ describe '.create' do
   describe '.book' do
     it 'allows the user to book a property' do
     makersbnb = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
-    Property.book(id: makersbnb.id) # id provided by specific button clicked
+    booked_property = Property.book(id: makersbnb.id) # id provided by specific button clicked
+    expect(booked_property).to be_a Property
+    expect(booked_property.property_name).to eq "Test Name"
+    expect(booked_property.description).to eq "Test description"
+    expect(booked_property.price).to eq "90.45"
+    expect(booked_property.host_name).to eq "Test host name"
     end
   end
 end
