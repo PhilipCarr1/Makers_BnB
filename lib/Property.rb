@@ -26,7 +26,7 @@ class Property
 
     result = connection.exec('SELECT * FROM property;')
   end
-end
+
 
   def self.create(property_name:, description:, price:, host_name:)
     connection = open_connection
