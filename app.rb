@@ -3,6 +3,8 @@ require 'sinatra/reloader' if development?
 require './lib/Property'
 
 class MakersBnB < Sinatra::Base
+  enable :sessions
+
   get '/' do
     erb :index
   end
@@ -21,12 +23,14 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
-  # post '/properties/:id' do
-  #   @booked_property = Property.book(id: params[:id])
-  # end
+  post '/booking_confirmation/:id' do
+    session[:booked_property] = Property.book(id: params[:id]) 
+    redirect '/booking_confirmation/:id'
+  end
+
 
   get '/booking_confirmation/:id' do
-    @booked_property = Property.book(id: params['property.id') # need to get id from the button id clicked
+    @booked_property = session[:booked_property]
     erb :confirmation_page
   end
 

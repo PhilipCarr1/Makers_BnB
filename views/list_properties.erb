@@ -3,7 +3,7 @@
 <% @properties.each do |property| %>
 <li>
   <%= property.property_name %>
-  <form action='/booking_confirmation/<%= property.id %>' method='get'>
+  <form action='/booking_confirmation/<%= property.id %>' method='post'>
   <input type='submit' value='Book Now!'/>
 </li>
 <% end %>
