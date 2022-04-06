@@ -1,5 +1,9 @@
 <ul>
 <% @properties.each do |list|%>
 <li><%= list%></li>
+  <form action="/properties/<%= list %>" method="post">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <input type="submit" value="Delete property"/>
+  </form>
 <% end %>
 </ul>

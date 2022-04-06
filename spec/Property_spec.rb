@@ -27,3 +27,14 @@ describe '.create' do
     expect(makersbnb.host_name).to eq "Test host name"
   end
 end
+
+describe '.delete' do
+  it 'deletes a property' do
+    makersbnb = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
+    persisted_data = persisted_data(id: makersbnb.id)
+    Property.delete(id: list.id)
+    makersbnb = Property.all
+
+    expect(list.empty?).to eq true
+  end
+end
