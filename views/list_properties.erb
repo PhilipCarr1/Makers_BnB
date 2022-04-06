@@ -1,5 +1,9 @@
 <ul>
-<% @properties.each do |list|%>
-<li><%= list%></li>
+<% @properties.each do |properties|%>
+<li><%= properties.id%></li>
+<li><%= properties.property_name%></li>
+<li><%= properties.description%></li>
+<li><%= properties.price%></li>
+<li><%= properties.host_name%></li>
 <% end %>
 </ul>

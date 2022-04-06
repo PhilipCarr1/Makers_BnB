@@ -1,15 +1,19 @@
 require "Property"
 require 'database_helpers'
+require 'pg'
 
 describe Property do
   describe '.all' do 
       it 'returns all properties' do 
-        properties = Property.all
 
-        expect(properties).to include "Makers Paradise"
-        expect(properties).to include "Quaint little paradise escape, perfect for couples and families"
-        expect(properties).to include "130.75"
-        expect(properties).to include "Benedict Cumberbatch"
+        setup_test_database
+
+         result = Property.create(property_name: 'Test Property Name', description: 'Test description', price: 99.99, host_name: 'Test host name')
+        
+        result = Property.all
+
+        expect(result.length).to eq 1
+        expect(result.description).to eq "Test description"
       end 
     end
 end

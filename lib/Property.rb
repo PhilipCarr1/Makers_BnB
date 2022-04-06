@@ -25,8 +25,10 @@ class Property
     connection = open_connection
 
     result = connection.exec('SELECT * FROM property;')
+    result.map do |property|
+      Property.new(id: property['id'], description: property['description'], price: property['price'], host_name: property['host_name'])
+    end
   end
-end
 
   def self.create(property_name:, description:, price:, host_name:)
     connection = open_connection
