@@ -23,9 +23,9 @@ class Property
   def self.all
     connection = open_connection
     result = connection.exec('SELECT * FROM property;')
-    result.map { | property |
+    result.map do |property|
       Property.new(id: property['id'], property_name: property['property_name'], description: property['description'], price: property['price'], host_name: property['host_name'])
-    }
+    end
   end
 
   def self.create(property_name:, description:, price:, host_name:)
@@ -40,5 +40,11 @@ class Property
     connection = open_connection
     result = connection.exec_params('SELECT * FROM property WHERE id=$1;',[id])
     Property.new(id: result[0]['id'], property_name: result[0]['property_name'], description: result[0]['description'], price: result[0]['price'], host_name: result[0]['host_name'])
+  end
+  
+  def self.delete(id:)
+    connection = open_connection
+  
+    connection.exec("DELETE FROM property WHERE id = '#{id}';")
   end
 end

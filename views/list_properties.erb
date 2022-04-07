@@ -1,13 +1,17 @@
 <h1> List properties page </h1>
 <ul>
 <% @properties.each do |property| %>
-  <li><%= property.property_name%></li> 
+  <li><%= property.property_name %></li> 
   <p><%= property.description %></p>
   <p><%= property.price %></p>
   <p><%= property.host_name %></p>
   <form action='/properties/<%= property.id %>' method='post'>
   <input type='submit' value='Book Now!' id=<%= property.id %>/>
   </form>
-  </li>
+  <form action="/properties/<%= property.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE"/>
+  <input type="submit" value="Delete property" id="delete_1"/>
+  </form>
 <% end %>
 </ul> 
+

@@ -3,7 +3,7 @@ require 'sinatra/reloader' if development?
 require './lib/Property'
 
 class MakersBnB < Sinatra::Base
-  enable :sessions
+  enable :sessions, :method_override
 
   get '/' do
     erb :index
@@ -28,10 +28,14 @@ class MakersBnB < Sinatra::Base
     redirect '/booking_confirmation'
   end
 
-
   get '/booking_confirmation' do
     @booked_property = session[:booked_property]
     erb :confirmation_page
+  end
+
+  delete '/properties/:id' do
+    Property.delete(id: params[:id])
+    redirect '/properties'
   end
 
   run! if app_file == $0
