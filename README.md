@@ -1,6 +1,4 @@
 # Instructions
-Test line
-The above line is a mistake
 
 Navigate to your project folder on your machine.
 
@@ -126,7 +124,7 @@ To setup the database:
 * Run the query we have saved in the file 01_create_property_table.sql
 * Populate your table with a row by running `INSERT INTO property (property_name, description, price,host_name) values ('Makers Paradise', 'Quaint little paradise escape, perfect for couples and families', 130.75, 'Benedict Cumberbatch');`
 
-To check you have everything set up ok, please take a look at the peeps table inside the chitter database. You should see one row in there.  
+To check you have everything set up ok, please take a look at the property table inside the makersbnb database. You should see one row in there.  
 
 To setup the test database:
 * Connect to psql

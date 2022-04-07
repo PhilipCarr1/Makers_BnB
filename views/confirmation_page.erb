@@ -11,17 +11,32 @@
   <h1>Bee N Bees.com</h1>
   </a>
 </header>
-<h1>Booking Confirmation</h1>
-<p>You have booked the following property:</p>
-<div><p>Property Name:</p> 
-  <%= @booked_property.property_name %>
-  <p>Property Description:</p>
-  <%= @booked_property.description %>
-  <p>Your host is: </p>
-  <%= @booked_property.host_name %>
-</div>
-<p>Enjoy your stay!</p>
 
-<form action='/properties' method='get'>
-  <input type='submit' value='Back'/>
-</form>
+<h2>Booking Confirmation</h2>
+
+<br>
+
+<p>You have booked the following property:</p>
+
+<br>
+<br>
+
+<div class="listing">
+  <p><b>Property Name: </b><%= @booked_property.property_name %></p> 
+  <br>
+  <p><b>Property Description: </b><%= @booked_property.description %></p>
+  <br>
+  <p><b>Your host is: </b><%= @booked_property.host_name %></p>
+</div>
+
+<br>
+
+<div class="thanks">
+  <p>Enjoy your stay!</p>
+</div>
+
+<div class="back_button">
+  <form action='/' method='get'>
+    <input type='submit' value='Back'/>
+  </form>
+</div>
