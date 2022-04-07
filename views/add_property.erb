@@ -1,3 +1,14 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+<header>
+  <a href="/">
+  <img src="bee_logo.png" class="logo" alt="BeeNBee Logo">
+  <h1>Bee N Bees.com</h1>
+  </a>
+</header>
+
 <h1>ADD PROPERTY PAGE</h1>
 <form action='/add_property' method='post'>
   <input type='text' name='property_name' placeholder='Property Name'/>
@@ -5,4 +16,8 @@
   <input type='text' name='price' placeholder='Price in a decimal value'/>
   <input type='text' name='host_name' placeholder='Host Name'/>
   <input type='submit' name='Submit'/>
+</form>
+
+<form action='/' method='get'>
+  <input type='submit' value='Back'/>
 </form>

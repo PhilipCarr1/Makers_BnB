@@ -3,13 +3,27 @@ body {
   color: lightblue;
 }
 
-h1 {
+header {
   background-color: rgb(155, 233, 152);
   color: rgb(75, 75, 158);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  padding: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 20px 0px;
+}
+
+h2 {
+  background-color: yellow;
+  color: blue;
+}
+
+.logo { width: auto;
+        height: 100px; 
+        padding: 50px, 50px;
+        position: absolute;
+        left:20px;
+        top:30px;
 }
 
 .main_img {

@@ -1,4 +1,15 @@
-<h1> List properties page </h1>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+</head>
+
+<header>
+  <a href="/">
+  <img src="bee_logo.png" class="logo" alt="BeeNBee Logo">
+  <h1>Bee N Bees.com</h1>
+  </a>
+</header>
+
+<h2> List properties page </h2>
 <ul>
 <% @properties.each do |property| %>
   <li><%= property.property_name %></li> 
@@ -14,6 +25,10 @@
   </form>
 <% end %>
 </ul> 
+
+<form action='/' method='get'>
+  <input type='submit' value='Back'/>
+</form>
 
 <form action="/properties/filter" method="get">
   <input type="text" name="filter" placeholder="Filter keyword" />
