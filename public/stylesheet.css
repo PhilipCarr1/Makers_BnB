@@ -3,12 +3,25 @@ body {
   color: lightblue;
 }
 
-h1 {
+header {
+  background-color: yellow;
+  color: blue;
+  padding: 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 20px 0px;
+}
+
+h2 {
   background-color: yellow;
   color: blue;
 }
 
 .logo { width: auto;
-        height: 200px; 
+        height: 100px; 
         padding: 50px, 50px;
+        position: absolute;
+        left:20px;
+        top:30px;
 }
