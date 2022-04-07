@@ -29,5 +29,10 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
+  get '/properties/filter' do
+    @filtered_properties = Property.filter(params[:filter])
+    erb :filtered_properties
+  end
+
   run! if app_file == $0
 end
