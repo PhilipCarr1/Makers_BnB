@@ -33,3 +33,35 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
+.navbar {
+  overflow: hidden;
+  background-color: darkkhaki;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+.navbar a.active {
+  background-color: lightblue;
+  color: blue;
+}
