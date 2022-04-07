@@ -1,0 +1,10 @@
+<h1>Welcome to Makers BnB!</h1>
+
+<h2>Here are your filtered properties</h2>
+
+<% @filtered_properties.each do |property| %>
+  <li><%= property.property_name%></li> 
+    <p><%= property.description %></p>
+    <p><%= property.price%></p>
+    <p><%= property.host_name%></p>
+<% end %>

@@ -47,4 +47,13 @@ class Property
   
     connection.exec("DELETE FROM property WHERE id = '#{id}';")
   end
+
+  def self.filter(filter)
+    connection = open_connection
+    
+    result = connection.exec("SELECT * FROM property WHERE lower(description) LIKE '%#{filter.downcase}%';")
+    result.map do |property|
+      Property.new(id: property['id'], property_name: property['property_name'], description: property['description'], price: property['price'], host_name: property['host_name'])
+    end
+  end
 end
