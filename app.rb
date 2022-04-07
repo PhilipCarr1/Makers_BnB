@@ -23,13 +23,13 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
-  post '/booking_confirmation/:id' do
-    session[:booked_property] = Property.book(id: params[:id]) 
-    redirect '/booking_confirmation/:id'
+  post '/properties/:id' do
+    session[:booked_property] = Property.book(id: params[:id])
+    redirect '/booking_confirmation'
   end
 
 
-  get '/booking_confirmation/:id' do
+  get '/booking_confirmation' do
     @booked_property = session[:booked_property]
     erb :confirmation_page
   end
