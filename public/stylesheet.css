@@ -8,4 +8,7 @@ h1 {
   color: blue;
 }
 
-.logo{ width: 100px, height: 100px, background-image: url(bee_logo.png); }
+.logo { width: auto;
+        height: 200px; 
+        padding: 50px, 50px;
+      }
