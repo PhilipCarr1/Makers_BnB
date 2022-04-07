@@ -1,0 +1,13 @@
+<h1>Property Confirmation</h1>
+<p>You have added the following property:</p>
+<div><p>Property Name:</p> 
+  <%= @added_property.property_name %>
+  <p>Property Description:</p>
+  <%= @added_property.description %>
+  <p>Property Price: </p>
+  <%= @added_property.price %>
+</div>
+
+<form action='/properties' method='get'>
+  <input type='submit' value='View Properties'/>
+</form>

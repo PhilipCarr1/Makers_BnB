@@ -19,8 +19,8 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/add_property' do
-    Property.create(property_name: params[:property_name], description: params[:description], price: params[:price], host_name: params[:host_name])
-    redirect '/properties'
+    session[:added_property] = Property.create(property_name: params[:property_name], description: params[:description], price: params[:price], host_name: params[:host_name])
+    redirect '/add_confirmation'
   end
 
   post '/properties/:id' do
@@ -31,6 +31,11 @@ class MakersBnB < Sinatra::Base
   get '/booking_confirmation' do
     @booked_property = session[:booked_property]
     erb :confirmation_page
+  end
+
+  get '/add_confirmation' do
+    @added_property = session[:added_property]
+    erb :add_confirmation
   end
 
   delete '/properties/:id' do
