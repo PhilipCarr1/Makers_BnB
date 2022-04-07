@@ -1,55 +1,73 @@
 /* <link rel="stylesheet"type="text/css"href="stylesheet.css"/> */
 body {
-  color: lightblue;
+  background-color: lightgrey;
+  color: black;
+}
+
+.message {
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  forced-color-adjust: black
 }
 
 header {
-  background-color: rgb(155, 233, 152);
-  color: rgb(75, 75, 158);
+  background-color: yellow;
+  color: black;
   padding: 20px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 20px 0px;
 }
 
 h1 {
   font-family: 'Bangers', cursive;
   font-size: 60;
-  color: rgb(75, 75, 158);
+  color: black;
+  word-spacing: 2;
 }
 
 h2 {
-  background-color: rgb(155, 233, 152);
-  color: rgb(75, 75, 158);
+  font-family: 'Bangers', cursive;
+  font-size: 20;
+  color: orange;
+  text-align: center;
+  margin-top: 10px;
+  word-spacing: 2;
+  letter-spacing: 2;
 }
 
-.logo { width: auto;
-        height: 150px; 
-        padding: 50px, 50px;
-        position: absolute;
-        left:40px;
-        top:40px;
+.logo {
+  width: auto;
+  height: 150px;
+  padding: 50px, 50px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
 }
 
 a:link {
   text-decoration: none;
 }
+
 a:visited {
-  color: blue;
+  color: purple;
 }
 
 .main_img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   max-width: 100%;
   height: auto;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: darkkhaki;
+  background-color: yellow;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -58,7 +76,7 @@ a:visited {
 .navbar a {
   float: left;
   display: block;
-  color: blue;
+  color: black;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -70,11 +88,55 @@ a:visited {
 }
 
 .navbar a:hover {
-  background-color: yellow;
-  color: blue;
+  background-color: black;
+  color: orange;
 }
 
 .navbar a.active {
-  background-color: lightblue;
-  color: blue;
+  background-color: black;
+  color: orange;
+}
+
+input {
+  color: yellow;
+  background-color: black;
+}
+
+::placeholder {
+  background-color: darkgrey;
+  color: grey;
+  text-align: center;
+}
+
+.back_button {
+  margin-top: 300;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-size-adjust: 30px;
+}
+
+.filter {
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing {
+  background-color: white;
+  width: 300px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 500px;
+}
+
+.thanks {
+  margin-left: 650px;
 }

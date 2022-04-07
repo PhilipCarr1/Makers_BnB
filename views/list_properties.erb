@@ -12,28 +12,46 @@
   </a>
 </header>
 
-<h2> List properties page </h2>
-<ul>
-<% @properties.each do |property| %>
-  <li><%= property.property_name %></li> 
-  <p><%= property.description %></p>
-  <p><%= property.price %></p>
-  <p><%= property.host_name %></p>
-  <form action='/properties/<%= property.id %>' method='post'>
-  <input type='submit' value='Book Now!' id=<%= property.id %>/>
-  </form>
-  <form action="/properties/<%= property.id %>" method="post">
-  <input type="hidden" name="_method" value="DELETE"/>
-  <input type="submit" value="Delete property" id="delete_1"/>
-  </form>
-<% end %>
-</ul> 
+<body>
 
-<form action='/' method='get'>
-  <input type='submit' value='Back'/>
-</form>
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/properties" class="active">View Properties</a>
+  <a href="/add_property">Add a Property</a>
+  <a href="#" class="right">Log in/Sign up</a>
+</div>
 
-<form action="/properties/filter" method="get">
-  <input type="text" name="filter" placeholder="Filter keyword" />
-  <input type="submit" value="Filter" />
-</form>
+<h2> Here are a list of our current properties </h2>
+
+<div class="filter">
+  <form action="/properties/filter" method="get">
+    <input type="text" name="filter" placeholder="Filter keyword" />
+    <input type="submit" value="Filter" />
+  </form>
+</div>
+
+<div class="listing">
+  <ul>
+    <% @properties.each do |property| %>
+    <li><%= property.property_name %></li> 
+    <p><%= property.description %></p>
+    <p><%= property.price %></p>
+    <p><%= property.host_name %></p>
+    <form action='/properties/<%= property.id %>' method='post'>
+    <input type='submit' value='Book Now!' id=<%= property.id %>/>
+    </form>
+    <form action="/properties/<%= property.id %>" method="post">
+    <input type="hidden" name="_method" value="DELETE"/>
+    <input type="submit" value="Delete property" id="delete_1"/>
+    </form>
+    <% end %>
+  </ul> 
+</div>
+
+<div class="back_button">
+  <form action='/' method='get'>
+    <input type='submit' value='Back'/>
+  </form>
+</div>
+
+</body>
