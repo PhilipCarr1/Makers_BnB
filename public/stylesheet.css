@@ -9,8 +9,8 @@ h1 {
 }
 
 input {
-  background-color: darkblue;
-  color: white;
+  background-color: yellow;
+  color: blue;
 }
 
 .header {
@@ -19,4 +19,20 @@ input {
   background: yellow;
   color: blue;
   font-size: 30px;
+}
+
+.view_properties_button {
+  padding: 10px;
+  text-align: center;
+  margin-right: 550px;
+  margin-top: 250px;
+  font-size: 15px;
+}
+
+.add_properties_button {
+  padding: 10px;
+  text-align: center;
+  margin-left: 550px;
+  margin-top: -55px;
+  font-size: 15px;
 }
