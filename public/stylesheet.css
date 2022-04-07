@@ -13,15 +13,20 @@ header {
   margin: 20px 0px;
 }
 
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 60;
+}
+
 h2 {
   background-color: yellow;
   color: blue;
 }
 
 .logo { width: auto;
-        height: 100px; 
+        height: 150px; 
         padding: 50px, 50px;
         position: absolute;
-        left:20px;
-        top:30px;
+        left:40px;
+        top:40px;
 }
