@@ -14,8 +14,6 @@ describe Property do
         expect(properties.first).to be_a Property
         expect(properties.first.property_name).to eq "Test Property Name"
         expect(properties.first.host_name).to eq "Test host name"
-        expect(properties.second.property_name).to eq "Test Property Two"
-        expect(properties.second.host_name).to eq "Test host two"
       end 
     end
 end
@@ -36,10 +34,13 @@ end
 
 describe '.delete' do
   it 'deletes a property' do
-    property = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
-    Property.delete(id: property.id)
+    setup_test_database
+    property_to_delete = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
+    Property.delete(id: property_to_delete.id)
     properties = Property.all
-
-    expect(properties.empty?).to eq true
+    
+    properties.each do |property| 
+      expect(property.id).to be != property_to_delete.id
+    end
   end
 end

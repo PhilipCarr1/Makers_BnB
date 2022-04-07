@@ -1,5 +1,6 @@
 feature 'deleting property' do
   scenario 'a user can delete a property' do
+    setup_test_database
     visit ('/add_property')
 
     fill_in('property_name', with: 'Test Property Name')
@@ -9,7 +10,7 @@ feature 'deleting property' do
     click_button 'Submit'
 
     visit ('/properties')
-    click_button 'Delete property'
+    click_button(id='delete_1')
     expect(page).not_to have_content('Test Property Name')
     expect(page).not_to have_content('Test description')
     expect(page).not_to have_content(99.99)

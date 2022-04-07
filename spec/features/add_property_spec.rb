@@ -5,7 +5,7 @@ feature 'Add property' do
     setup_test_database
     
     Property.create(property_name: 'Test Property Name', description: 'Test description', price: 99.99, host_name: 'Test host name')
-
+  
     visit ('/properties')
 
     expect(page).to have_content('Test Property Name')

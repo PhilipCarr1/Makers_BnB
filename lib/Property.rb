@@ -23,8 +23,11 @@ class Property
 
   def self.all
     connection = open_connection
-
+  
     result = connection.exec('SELECT * FROM property;')
+    result.map do |property|
+      Property.new(id: property['id'], property_name: property['property_name'], description: property['description'], price: property['price'], host_name: property['host_name'])
+    end
   end
 
   def self.create(property_name:, description:, price:, host_name:)
