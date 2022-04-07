@@ -1,10 +1,15 @@
 feature 'viewing properties page' do 
     scenario 'visiting /properties page' do 
-        visit('/properties')
 
-        expect(page).to have_content "Makers Paradise"
-        expect(page).to have_content "Quaint little paradise escape, perfect for couples and families"
-        expect(page).to have_content "130.75"
-        expect(page).to have_content "Benedict Cumberbatch"
+        setup_test_database
+
+        Property.create(property_name: 'Test Property Name', description: 'Test description', price: 99.99, host_name: 'Test host name')
+
+        visit ('/properties')
+
+        expect(page).to have_content('Test Property Name')
+        expect(page).to have_content('Test description')
+        expect(page).to have_content(99.99)
+        expect(page).to have_content('Test host name')
     end 
 end 
