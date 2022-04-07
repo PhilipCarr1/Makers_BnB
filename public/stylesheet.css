@@ -1,0 +1,11 @@
+/* <link rel="stylesheet"type="text/css"href="stylesheet.css"/> */
+body {
+  color: lightblue;
+}
+
+h1 {
+  background-color: yellow;
+  color: blue;
+}
+
+.logo{ width: 100px, height: 100px, background-image: url(bee_logo.png); }
