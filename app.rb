@@ -3,7 +3,6 @@ require 'sinatra/reloader' if development?
 require './lib/Property'
 
 class MakersBnB < Sinatra::Base
-
   enable :sessions, :method_override
 
   get '/' do
@@ -22,6 +21,16 @@ class MakersBnB < Sinatra::Base
   post '/add_property' do
     Property.create(property_name: params[:property_name], description: params[:description], price: params[:price], host_name: params[:host_name])
     redirect '/properties'
+  end
+
+  post '/properties/:id' do
+    session[:booked_property] = Property.book(id: params[:id])
+    redirect '/booking_confirmation'
+  end
+
+  get '/booking_confirmation' do
+    @booked_property = session[:booked_property]
+    erb :confirmation_page
   end
 
   delete '/properties/:id' do

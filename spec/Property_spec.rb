@@ -30,6 +30,18 @@ describe '.create' do
     expect(makersbnb.price).to eq "90.45"
     expect(makersbnb.host_name).to eq "Test host name"
   end
+
+  describe '.book' do
+    it 'allows the user to book a property' do
+    makersbnb = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
+    booked_property = Property.book(id: makersbnb.id) # id provided by specific button clicked
+    expect(booked_property).to be_a Property
+    expect(booked_property.property_name).to eq "Test Name"
+    expect(booked_property.description).to eq "Test description"
+    expect(booked_property.price).to eq "90.45"
+    expect(booked_property.host_name).to eq "Test host name"
+    end
+  end
 end
 
 describe '.delete' do
