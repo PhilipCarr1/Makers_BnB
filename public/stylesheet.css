@@ -14,8 +14,8 @@ header {
 }
 
 h2 {
-  background-color: yellow;
-  color: blue;
+  background-color: rgb(155, 233, 152);
+  color: rgb(75, 75, 158);
 }
 
 .logo { width: auto;
