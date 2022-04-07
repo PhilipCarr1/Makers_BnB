@@ -19,9 +19,10 @@ input {
   background: yellow;
   color: blue;
   font-size: 30px;
+  border: 2px;
 }
 
-.view_properties_button {
+/* .view_properties_button {
   padding: 10px;
   text-align: center;
   margin-right: 550px;
@@ -35,4 +36,40 @@ input {
   margin-left: 550px;
   margin-top: -55px;
   font-size: 15px;
+} */
+
+.navbar {
+  overflow: hidden;
+  background-color: darkkhaki;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: yellow;
+  color: blue;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: lightblue;
+  color: blue;
 }

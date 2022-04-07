@@ -8,7 +8,7 @@
       <p>The busiest bees in town</p>
     </div>
 
-    <div class="view_properties_button">
+    <%# <div class="view_properties_button">
       <form action="/properties" method="get">
        <input type="submit" value="View Properties">
       </form>
@@ -18,7 +18,14 @@
       <form action="/add_property" method="get">
         <input type="submit" value="Add a Property?">
       </form>
-    </div>
+    </div> %>
+
+    <div class="navbar">
+  <a href="/" class="active">Home</a>
+  <a href="/properties">View Properties</a>
+  <a href="/add_property">Add a Property</a>
+  <a href="#" class="right">Log in/Sign up</a>
+</div>
 
   </body>
 </html>
