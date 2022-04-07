@@ -12,11 +12,11 @@ Refer to 'db-migrations' folder for any necessary database setup instructions (s
 
 ## Useful commands
 
-git branch -a (View all branches, an * will appear next to the current branch you are in)
-git branch "branch name" (Creates a new branch, the speech marks are not required)
-git checkout -b "branch name" (Creates and checks out a branch all in one command)
+git branch -a (View all branches, an * will appear next to the current branch you are in) <br />
+git branch "branch name" (Creates a new branch, the speech marks are not required) <br />
+git checkout -b "branch name" (Creates and checks out a branch all in one command) <br />
 git checkout "branch name" (changes to a different branch. If the branch does not exist will throw error, don't worry just run the <br />
-command again and check spelling)
+command again and check spelling)<br />
 git merge "branch name" (Merges current branch onto main, add "--no--ff" to keep the branch commit history)
 
 ## Branch workflow
