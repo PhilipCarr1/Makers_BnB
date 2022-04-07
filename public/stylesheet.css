@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   background-color: yellow;
-  color: blue;
+  color: #009cf7;
 }
 
 .logo { width: auto;
@@ -29,4 +29,11 @@ h2 {
         position: absolute;
         left:40px;
         top:40px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
 }
