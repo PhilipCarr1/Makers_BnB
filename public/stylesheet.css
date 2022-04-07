@@ -4,8 +4,8 @@ body {
 }
 
 header {
-  background-color: yellow;
-  color: blue;
+  background-color: rgb(155, 233, 152);
+  color: rgb(75, 75, 158);
   padding: 20px;
   display:flex;
   justify-content:center;
@@ -19,8 +19,8 @@ h1 {
 }
 
 h2 {
-  background-color: yellow;
-  color: #009cf7;
+  background-color: rgb(155, 233, 152);
+  color: rgb(75, 75, 158);
 }
 
 .logo { width: auto;
@@ -36,4 +36,12 @@ a:link {
 }
 a:visited {
   color: blue;
+}
+
+.main_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
 }
