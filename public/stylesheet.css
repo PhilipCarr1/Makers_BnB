@@ -7,3 +7,16 @@ h1 {
   background-color: yellow;
   color: blue;
 }
+
+input {
+  background-color: darkblue;
+  color: white;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: yellow;
+  color: blue;
+  font-size: 30px;
+}
