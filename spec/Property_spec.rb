@@ -18,21 +18,6 @@ describe Property do
     end
 end
 
-describe '.all' do 
-  it 'returns all properties' do 
-
-    setup_test_database
-
-     result = Property.create(property_name: 'Test Property Name', description: 'Test description', price: 99.99, host_name: 'Test host name')
-    
-    result = Property.all
-
-    expect(result.length).to eq 1
-    expect(result.description).to eq "Test description"
-  end 
-end
-
-
 describe '.create' do
   it 'creates a new property' do
     makersbnb = Property.create(property_name: "Test Name", description: "Test description", price: "90.45", host_name: "Test host name")
