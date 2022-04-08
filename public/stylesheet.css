@@ -207,7 +207,7 @@ form {
   font-family: 'Bangers', cursive;
 }
 
-body div p, div.navbar, form a {
+body div p, div.navbar, form a, label {
   font-family: 'Roboto', cursive;
   font-size: 20;
   font-weight: 400;
