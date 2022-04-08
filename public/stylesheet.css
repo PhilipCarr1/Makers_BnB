@@ -193,6 +193,10 @@ form {
   margin-left: 500px;
 }
 
+.listing li {
+  font-family: 'Bangers', cursive;
+  font-size: 30;
+}
 .thanks {
   margin-left: 650px;
 }
