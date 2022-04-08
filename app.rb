@@ -48,5 +48,18 @@ class MakersBnB < Sinatra::Base
     erb :filtered_properties
   end
 
+  get '/contact_page' do 
+    erb :contact_form
+  end 
+
+  post '/contact_page' do 
+    erb :contact_form
+    redirect '/confirmation_message'
+  end 
+
+  get '/confirmation_message' do
+    erb :contact_form_confirmation
+  end
+
   run! if app_file == $0
 end
