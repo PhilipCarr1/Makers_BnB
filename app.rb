@@ -59,6 +59,14 @@ class MakersBnB < Sinatra::Base
   get '/confirmation_message' do
     erb :contact_form_confirmation
   end
+  
+  get '/log_in' do
+    erb :log_in
+  end
+  
+  get '/register' do
+    erb :register
+  end
 
   run! if app_file == $0
 end
