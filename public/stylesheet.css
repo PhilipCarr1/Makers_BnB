@@ -20,6 +20,7 @@ header {
   align-items: center;
   text-align: center;
   margin: 20px 0px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -72,6 +73,7 @@ a:visited {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  border-radius: 10px;
 }
 
 .navbar a {
