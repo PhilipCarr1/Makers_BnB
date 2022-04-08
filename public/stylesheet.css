@@ -91,7 +91,7 @@ a:visited {
 }
 
 .navbar a:hover {
-  background-color: black;
+  background-color: rgba(34, 32, 32, 0.518);
   color: orange;
 }
 
