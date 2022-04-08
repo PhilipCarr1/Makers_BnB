@@ -6,10 +6,10 @@ feature 'contact form' do
     fill_in('lname', with: 'Doe')
     fill_in('email', with: 'janedoe@email.com')
     fill_in('message', with: 'I have a query about my booking.')
-    click_button 'submit'
+    click_button 'Send Message'
 
     visit('/confirmation_message')
 
-    expect(page).to have_content('Thank you for your message.')
+    expect(page).to have_content('Thank you for your message!')
   end 
 end 
