@@ -191,3 +191,9 @@ form {
 .thanks {
   margin-left: 650px;
 }
+
+body div p, div.navbar {
+  font-family: 'Roboto', cursive;
+  font-size: 20;
+  font-weight: 400;
+}
