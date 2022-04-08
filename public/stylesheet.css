@@ -212,3 +212,13 @@ body div p, div.navbar, form a {
   font-size: 20;
   font-weight: 400;
 }
+
+.adding_details {
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #999;
+  margin-top: 300px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
