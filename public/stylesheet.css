@@ -108,8 +108,8 @@ input {
 .contact-form {
   width: 500px;
   background-color: #fff;
-  box-shadow: 0 0 20px 0 #999;
-  top: 60%;
+  box-shadow: 0 0 10px 0 #999;
+  margin-top: 300px;
   left: 50%;
   transform: translate(-50%,-50%);
   position: absolute;
@@ -125,19 +125,24 @@ form {
 }
 
 .input-field {
+  background-color: white;
+  color: black;
   width: 400px;
   height: 40px;
   margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border: 1px solid #777;
   border-radius: 14px;
   outline: none;
   }
 
 .textarea-field {
+  background-color: white;
   height: 150px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .btn {
@@ -190,4 +195,13 @@ form {
 
 .thanks {
   margin-left: 650px;
+}
+
+.confirmation {
+  text-align: center;  
+  font-size: 40px;
+  font-family: 'Bangers', cursive;
+
+
+
 }
