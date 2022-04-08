@@ -222,3 +222,14 @@ body div p, div.navbar, form a {
   transform: translate(-50%,-50%);
   position: absolute;
 }
+
+.property_info {
+  font-family: 'Roboto', cursive;
+  font-size: 20;
+  font-weight: 400;
+  font-size: 15;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px;
+}
