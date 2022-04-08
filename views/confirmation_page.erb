@@ -13,31 +13,34 @@
   </a>
 </header>
 
-<h2>Booking Confirmation</h2>
+<body>
+  <h2>Booking Confirmation</h2>
 
-<br>
-
-<p>You have booked the following property:</p>
-
-<br>
-<br>
-
-<div class="listing">
-  <p><b>Property Name: </b><%= @booked_property.property_name %></p> 
   <br>
-  <p><b>Property Description: </b><%= @booked_property.description %></p>
+
+  <div class="thanks">
+    <p>You have booked the following property:</p>
+  </div>
   <br>
-  <p><b>Your host is: </b><%= @booked_property.host_name %></p>
-</div>
+  <br>
 
-<br>
+  <div class="listing">
+    <p><b>Property Name: </b><%= @booked_property.property_name %></p> 
+    <br>
+    <p><b>Property Description: </b><%= @booked_property.description %></p>
+    <br>
+    <p><b>Your host is: </b><%= @booked_property.host_name %></p>
+  </div>
 
-<div class="thanks">
-  <p>Enjoy your stay!</p>
-</div>
+  <br>
 
-<div class="back_button">
-  <form action='/' method='get'>
-    <input type='submit' value='Back'/>
-  </form>
-</div>
+  <div class="thanks">
+    <p>Enjoy your stay!</p>
+  </div>
+
+  <div class="back_button">
+    <form action='/' method='get'>
+      <input type='submit' value='Back'/>
+    </form>
+  </div>
+</body>

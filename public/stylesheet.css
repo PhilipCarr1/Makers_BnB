@@ -207,8 +207,29 @@ form {
   font-family: 'Bangers', cursive;
 }
 
-body div p, div.navbar, form a {
+body div p, div.navbar, form a, label {
   font-family: 'Roboto', cursive;
   font-size: 20;
   font-weight: 400;
+}
+
+.adding_details {
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 #999;
+  margin-top: 300px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.property_info {
+  font-family: 'Roboto', cursive;
+  font-size: 20;
+  font-weight: 400;
+  font-size: 15;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 50px;
 }

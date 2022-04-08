@@ -22,19 +22,27 @@
     <a href="/contact_page">Contact us!</a>
   </div>
 
+<h2>Add the details of your property here</h2>
+
 <div class="adding_details">
-  <h2>Add the details of your property here</h2>
     <form action='/add_property' method='post'>
-    <input type='text' name='property_name' placeholder='Property Name: ...'/>
-    <br>
-    <input type='text' name='description' placeholder='Description: ...'/>
-    <br>
-    <input type='text' name='price' placeholder='£0.00: ...'/>
-    <br>
-    <input type='text' name='host_name' placeholder='Your Name: ...'/>
+    <label for="property_name">PROPERTY NAME:</label>
+    <input type='text' name='property_name' placeholder='Property Name: ...' class='input-field'/>
     <br>
     <br>
-    <input type='submit' name='Submit'/>
+    <label for="description">DESCRIPTION:</label>
+    <input type='text' name='description' placeholder='Description: ...' class="input-field textarea-field"/>
+    <br>
+    <br>
+    <label for="price">PRICE:</label>
+    <input type='text' name='price' placeholder='£0.00: ...' class='input-field'/>
+    <br>
+    <br>
+    <label for="host_name">HOST NAME:</label>
+    <input type='text' name='host_name' placeholder='Your Name: ...' class='input-field'/>
+    <br>
+    <br>
+    <input type='submit' name='Submit' class="btn"/>
   </form>
 </div>
 
