@@ -12,15 +12,33 @@
   </a>
 </header>
 
-<h1>ADD PROPERTY PAGE</h1>
-<form action='/add_property' method='post'>
-  <input type='text' name='property_name' placeholder='Property Name'/>
-  <input type='text' name='description' placeholder='Description'/>
-  <input type='text' name='price' placeholder='Price in a decimal value'/>
-  <input type='text' name='host_name' placeholder='Host Name'/>
-  <input type='submit' name='Submit'/>
-</form>
+<body>
+<div class="navbar">
+  <a href="/">Home</a>
+  <a href="/properties">View Properties</a>
+  <a href="/add_property" class="active">Add a Property</a>
+  <a href="#" class="right">Log in/Sign up</a>
+</div>
 
-<form action='/' method='get'>
-  <input type='submit' value='Back'/>
-</form>
+<div class="adding_details">
+  <h2>Add the details of your property here</h2>
+    <form action='/add_property' method='post'>
+    <input type='text' name='property_name' placeholder='Property Name: ...'/>
+    <br>
+    <input type='text' name='description' placeholder='Description: ...'/>
+    <br>
+    <input type='text' name='price' placeholder='£0.00: ...'/>
+    <br>
+    <input type='text' name='host_name' placeholder='Your Name: ...'/>
+    <br>
+    <br>
+    <input type='submit' name='Submit'/>
+  </form>
+</div>
+
+<div class="back_button">
+  <form action='/' method='get'>
+    <input type='submit' value='Back'/>
+  </form>
+</div>
+</body>

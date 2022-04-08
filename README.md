@@ -1,6 +1,4 @@
 # Instructions
-Test line
-The above line is a mistake
 
 Navigate to your project folder on your machine.
 
@@ -14,12 +12,12 @@ Refer to 'db-migrations' folder for any necessary database setup instructions (s
 
 ## Useful commands
 
-git branch -a (View all branches, an * will appear next to the current branch you are in)
-git branch "branch name" (Creates a new branch, the speech marks are not required)
-git checkout -b "branch name" (Creates and checks out a branch all in one command)
-git checkout "branch name" (changes to a different branch. If the branch does not exist will throw error, don't worry just run the <br />
-command again and check spelling)
-git merge "branch name" (Merges current branch onto main, add "--no--ff" to keep the branch commit history)
+- git branch -a (View all branches, an * will appear next to the current branch you are in) <br />
+- git branch "branch name" (Creates a new branch, the speech marks are not required) <br />
+- git checkout -b "branch name" (Creates and checks out a branch all in one command) <br />
+- git checkout "branch name" (changes to a different branch. If the branch does not exist will throw error, don't worry just run the
+command again and check spelling)<br />
+- git merge "branch name" (Merges current branch onto main, add "--no--ff" to keep the branch commit history)
 
 ## Branch workflow
 
@@ -126,7 +124,7 @@ To setup the database:
 * Run the query we have saved in the file 01_create_property_table.sql
 * Populate your table with a row by running `INSERT INTO property (property_name, description, price,host_name) values ('Makers Paradise', 'Quaint little paradise escape, perfect for couples and families', 130.75, 'Benedict Cumberbatch');`
 
-To check you have everything set up ok, please take a look at the peeps table inside the chitter database. You should see one row in there.  
+To check you have everything set up ok, please take a look at the property table inside the makersbnb database. You should see one row in there.  
 
 To setup the test database:
 * Connect to psql
