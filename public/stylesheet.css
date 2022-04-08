@@ -92,15 +92,14 @@ a:visited {
 
 .navbar a:hover {
   background-color: rgba(34, 32, 32, 0.518);
-  color: orange;
 	animation-name: link-color;
-	animation-duration: 300ms;
+	animation-duration: 500ms;
 	animation-fill-mode: forwards;
 }
 
 @keyframes link-color {
 	100% {
-		color: #FFFFFF;
+		color: orange;
 	}
 }
 
