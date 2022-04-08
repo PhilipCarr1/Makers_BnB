@@ -8,8 +8,6 @@ feature 'contact form' do
     fill_in('message', with: 'I have a query about my booking.')
     click_button 'Send Message'
 
-    visit('/confirmation_message')
-
     expect(page).to have_content('Thank you for your message!')
   end 
 end 

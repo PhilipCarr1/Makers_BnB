@@ -53,7 +53,6 @@ class MakersBnB < Sinatra::Base
   end 
 
   post '/contact_page' do 
-    erb :contact_form
     redirect '/confirmation_message'
   end 
 
