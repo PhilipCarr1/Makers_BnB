@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 require './lib/Property'
+require './lib/User'
 
 class MakersBnB < Sinatra::Base
   enable :sessions, :method_override
@@ -60,6 +61,15 @@ class MakersBnB < Sinatra::Base
   get '/confirmation_message' do
     erb :contact_form_confirmation
   end
+  
+  get '/log_in' do
+    erb :log_in
+  end
 
+  post '/log_in_confirm' do
+    User.new(user: params[:Username])
+    erb :log_in_confirm
+  end
+  
   run! if app_file == $0
 end
